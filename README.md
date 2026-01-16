@@ -53,7 +53,11 @@ Visit the live website: [Coming Soon]
 
 ## License
 
-This project is open source and available for anyone to use and modify.
+## License
+
+This project is proprietary. All rights are reserved.  
+No one is permitted to use, modify, copy, or distribute this project without explicit written permission from the owner.
+
 
 ---
 
