@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio Website">
-    <title>My Portfolio</title>
+    <meta name="description" content="Shaarif Shaikh - Web Developer Portfolio">
+    <title>Shaarif Shaikh | Web Developer</title>
     <link rel="icon" type="image/jpeg" href="images/profile.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">My Portfolio</div>
-            <div class="hamburger">
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <nav class="nav">
+            <a href="#home" class="logo">Shaarif.dev</a>
+            <div class="hamburger" aria-label="Toggle navigation" role="button" tabindex="0">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -20,36 +27,74 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="hero">
+        <section id="home" class="hero reveal">
             <div class="hero-content">
-                <img src="images/profile.jpg" alt="Profile Photo" class="profile-photo">
-                <P>Hi I'm Shaarif Shaikh</P> 
-                <h1>I build responsive websites for small businesses</h1>
-                <p>Using HTML, CSS, JavaScript, and WordPress</p>
+                <p class="eyebrow">Freelance Web Developer</p>
+                <h1>High-converting websites crafted for small businesses that want to stand out.</h1>
+                <p class="hero-subtitle">Hi, I am Shaarif Shaikh. I design and build fast, responsive websites with clean UI, smooth motion, and strong user experience.</p>
                 <div class="cta-buttons">
-                    <a href="#projects" class="btn">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <a href="#projects" class="btn">Explore Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Start a Project</a>
                 </div>
+                <div class="hero-metrics">
+                    <article class="metric-card">
+                        <p class="metric-number" data-counter="15">0</p>
+                        <p class="metric-label">Projects Completed</p>
+                    </article>
+                    <article class="metric-card">
+                        <p class="metric-number" data-counter="99">0</p>
+                        <p class="metric-label">Client Satisfaction %</p>
+                    </article>
+                    <article class="metric-card">
+                        <p class="metric-number" data-counter="3">0</p>
+                        <p class="metric-label">Years of Learning</p>
+                    </article>
+                </div>
+            </div>
+            <div class="hero-visual reveal">
+                <img src="images/profile.jpg" alt="Portrait of Shaarif Shaikh" class="profile-photo">
+                <div class="floating-badge badge-1">Responsive First</div>
+                <div class="floating-badge badge-2">SEO Ready</div>
+                <div class="floating-badge badge-3">Fast Delivery</div>
             </div>
         </section>
 
-        <section id="about" class="about">
+        <section id="about" class="about reveal">
             <div class="container">
                 <h2>About Me</h2>
-                <div class="about-content">
-                    <p class="bio">I'm a web developer focused on building clean, responsive, and user-friendly websites for small businesses and individuals.</p>
-                    <p class="bio">I work with HTML, CSS, basic JavaScript, and WordPress to create websites that look good on all devices and are easy to maintain. I believe in simple design, fast delivery, and clear communication to make sure clients get exactly what they need.</p>
+                <div class="about-layout">
+                    <div class="about-content">
+                        <p class="bio">I build websites that do more than look good. They help brands communicate clearly, earn trust quickly, and convert visitors into real leads.</p>
+                        <p class="bio">My process combines thoughtful layout, strong visual hierarchy, and practical development in HTML, CSS, JavaScript, and WordPress.</p>
+                        <div class="about-highlights">
+                            <span>Clean UI</span>
+                            <span>Performance Focus</span>
+                            <span>Mobile Friendly</span>
+                            <span>Easy to Maintain</span>
+                        </div>
+                    </div>
+                    <div class="journey-card">
+                        <h3>My Work Process</h3>
+                        <ol>
+                            <li>Understand business goals and audience.</li>
+                            <li>Create wireframe and visual direction.</li>
+                            <li>Build responsive front-end and interactions.</li>
+                            <li>Optimize speed, SEO, and usability.</li>
+                        </ol>
+                    </div>
                 </div>
-                
+
                 <h3 class="skills-title">Skills</h3>
-                <p class="skills-description">Tools and technologies I use to build modern, responsive websites.</p>
+                <p class="skills-description">Tools and technologies I use to build modern and scalable websites.</p>
                 <div class="skills-container">
                     <div class="skill-category">
                         <h4>Frontend</h4>
@@ -68,7 +113,7 @@
                             <li>Plugin Setup (Contact Forms, SEO)</li>
                         </ul>
                     </div>
-                    
+
                     <div class="skill-category">
                         <h4>Tools</h4>
                         <ul class="skill-list">
@@ -81,29 +126,68 @@
             </div>
         </section>
 
-        <section id="projects" class="projects">
+        <section id="services" class="services reveal">
+            <div class="container">
+                <h2>Services</h2>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <h3>Business Website</h3>
+                        <p>Professional multi-section websites tailored for local brands and small businesses.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3>Landing Page Design</h3>
+                        <p>Focused pages with clear CTAs to improve conversions and lead generation.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3>WordPress Setup</h3>
+                        <p>Custom themes, plugin setup, and optimized structure for easy content management.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3>Speed Optimization</h3>
+                        <p>Performance improvements for faster load times and better user retention.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects reveal">
             <div class="container">
                 <h2>My Projects</h2>
+                <div class="project-filters" role="tablist" aria-label="Filter projects">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="business">Business</button>
+                    <button class="filter-btn" data-filter="landing">Landing</button>
+                    <button class="filter-btn" data-filter="portfolio">Portfolio</button>
+                </div>
                 <div class="project-grid">
-                    <div class="project-card">
+                    <div class="project-card" data-category="business">
                         <h3>Nida Mahendi Designs</h3>
-                        <p>A responsive website for a local business with service sections, contact form, and mobile-friendly layout.</p>
+                        <p>A responsive local business website with service sections, contact form, and mobile-friendly layout.</p>
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
                         <div class="project-buttons">
                             <a href="https://nidamahendidesigns.netlify.app/" class="project-btn" target="_blank">Live Demo</a>
                             <a href="https://github.com/ShaarifShaikh25/nida_Mahendi_Designs" class="project-btn project-btn-secondary" target="_blank">GitHub</a>
                         </div>
                     </div>
-                    <div class="project-card">
+                    <div class="project-card" data-category="landing">
                         <h3>Landing Page</h3>
                         <p>A clean one-page landing website focused on lead generation and call-to-action.</p>
+                        <div class="project-tags">
+                            <span>UI Design</span><span>Responsive</span><span>CTA</span>
+                        </div>
                         <div class="project-buttons">
                             <a href="#" class="project-btn" target="_blank">Live Demo</a>
                             <a href="#" class="project-btn project-btn-secondary" target="_blank">GitHub</a>
                         </div>
                     </div>
-                    <div class="project-card">
+                    <div class="project-card" data-category="portfolio">
                         <h3>Personal Portfolio</h3>
                         <p>A personal portfolio website to showcase skills, projects, and contact details.</p>
+                        <div class="project-tags">
+                            <span>Portfolio</span><span>Animation</span><span>Branding</span>
+                        </div>
                         <div class="project-buttons">
                             <a href="https://shaarifshaikh.netlify.app/" class="project-btn" target="_blank">Live Demo</a>
                             <a href="https://github.com/ShaarifShaikh25/my_Portfolio" class="project-btn project-btn-secondary" target="_blank">GitHub</a>
@@ -113,17 +197,46 @@
             </div>
         </section>
 
-        <section id="contact" class="contact">
+        <section id="testimonials" class="testimonials reveal">
+            <div class="container">
+                <h2>Client Feedback</h2>
+                <div class="testimonial-track" aria-live="polite">
+                    <article class="testimonial-card active">
+                        <p>"Great communication and a smooth process. The final website looked premium and worked perfectly on mobile."</p>
+                        <h4>Small Business Owner</h4>
+                    </article>
+                    <article class="testimonial-card">
+                        <p>"Shaarif quickly understood what we needed and delivered a fast, clean website with solid user experience."</p>
+                        <h4>Startup Founder</h4>
+                    </article>
+                    <article class="testimonial-card">
+                        <p>"Highly professional and detail-oriented. The animations and layout made our brand look much stronger online."</p>
+                        <h4>Creative Entrepreneur</h4>
+                    </article>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-btn" id="prevTestimonial" aria-label="Previous testimonial">Prev</button>
+                    <button class="testimonial-btn" id="nextTestimonial" aria-label="Next testimonial">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact reveal">
             <div class="container">
                 <h2>Contact Me</h2>
-                <p class="contact-intro">Interested in working together? Feel free to send me a message.</p>
+                <p class="contact-intro">Interested in working together? Share your goals and I will get back with a practical plan.</p>
+                <div class="quick-contact">
+                    <button class="copy-email" data-email="shaarif.shaikh.dev@gmail.com">Copy Email Address</button>
+                    <span class="copy-status" aria-live="polite"></span>
+                </div>
                 <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="access_key" value="1a97a2cb-9b1b-4003-8db1-f5543cf95375">
                     <input type="hidden" name="subject" value="New Contact from Portfolio">
                     <input type="hidden" name="from_name" value="Portfolio Contact Form">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <textarea name="message" placeholder="Your Message" required maxlength="500"></textarea>
+                    <p class="char-counter">0 / 500</p>
                     <button type="submit" class="btn">Get in Touch</button>
                 </form>
                 <p class="form-status" style="display: none; margin-top: 1rem; text-align: center;"></p>
@@ -150,8 +263,10 @@
             </a>
         </div>
         <p class="footer-availability">Available for freelance work</p>
-        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+        <p>&copy; 2026 Shaarif Shaikh. All rights reserved.</p>
     </footer>
+
+    <button class="back-to-top" aria-label="Back to top">↑</button>
 
     <script src="js/script.js"></script>
 </body>
