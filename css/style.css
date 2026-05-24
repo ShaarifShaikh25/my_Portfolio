@@ -123,6 +123,22 @@ a {
     letter-spacing: 0.4px;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.logo-badge {
+    font-size: 0.72rem;
+    padding: 0.24rem 0.56rem;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.03);
+    color: var(--text-muted);
+    border: 1px solid var(--stroke);
+    font-weight: 700;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -191,7 +207,7 @@ main {
 }
 
 section {
-    padding: 6rem 0;
+    padding: 4rem 0;
 }
 
 .reveal {
@@ -289,6 +305,12 @@ section {
     color: #fff;
 }
 
+.metric-number.suffix-x::after {
+    content: '×';
+    margin-left: 6px;
+    font-weight: 800;
+}
+
 .metric-label {
     font-size: 0.84rem;
     color: var(--text-muted);
@@ -353,8 +375,8 @@ h2 {
 .about-layout {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
-    gap: 1.4rem;
-    margin-bottom: 3rem;
+    gap: 1rem;
+    margin-bottom: 1.6rem;
 }
 
 .about-content,
@@ -433,8 +455,8 @@ h2 {
 .skill-category,
 .service-card,
 .project-card {
-    padding: 1.2rem;
-    transition: transform 0.28s ease, border-color 0.28s ease;
+    padding: 1rem;
+    transition: transform 0.24s ease, border-color 0.24s ease;
 }
 
 .skill-category:hover,
@@ -466,6 +488,37 @@ h2 {
 .project-card p,
 .testimonial-card p {
     color: var(--text-muted);
+}
+
+.role-badge {
+    display: inline-block;
+    margin-top: 0.85rem;
+    padding: 0.36rem 0.6rem;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.82rem;
+    background: rgba(255,255,255,0.03);
+    color: var(--text);
+    border: 1px solid var(--stroke);
+}
+
+.role-badge.badge-orange {
+    background: linear-gradient(120deg, var(--accent), #ff9d5c);
+    color: #10203a;
+    border-color: transparent;
+}
+
+.role-badge.badge-blue {
+    background: linear-gradient(120deg, #3aa0ff, #0066ff);
+    color: #ffffff;
+    border-color: transparent;
+}
+
+.card-logo {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 .project-filters {
