@@ -850,3 +850,27 @@ footer {
         scroll-behavior: auto !important;
     }
 }
+
+.projects-note {
+    margin-top: -0.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #9ca3af;
+    letter-spacing: 0.2px;
+    line-height: 1.6;
+}
+
+.projects-note::before {
+    content: "✦";
+    margin-right: 0.5rem;
+    color: #f59e0b;
+}
+
+@media (max-width: 768px) {
+    .projects-note {
+        font-size: 0.88rem;
+        margin-bottom: 1.5rem;
+        padding: 0 1rem;
+    }
+}
